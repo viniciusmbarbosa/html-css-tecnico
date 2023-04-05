@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercício Layout Responsivo (Desktop First)</title>
+
+<style>
+
+/* Continue o desenvolvimento do CSS abaixo, só que
+usando desta vez a abordagem DESKTOP FIRST. */
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: beige;
+    
+}
+h1,h2,p{
+    margin: 0;
+}
+#container {
+    background-color: white;
+    box-shadow: black 0 0 10px;
+    padding: 1%;
+    margin: auto;
+    max-width: 1100px;
+    
+}
+header{
+    display: flex;
+    background-color: rgb(90, 90, 218);
+    justify-content: space-between;
+    padding: 10px;
+}
+header nav{
+    background-color: yellow;
+    padding: 1rem;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+
+}
+.colunaA{background-color: green;} 
+.colunaB {background-color: orange;}
+.colunaC {background-color: hotpink;}
+
+.colunaA, .colunaB,.colunaC{width: 33.33;}
+footer{
+    background-color: grey;
+    height: 100px;
+    }
+footer p{
+    margin-top: 45px;
+}
+
+@media screen and (max-width:744px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .colunaA{width: 60%;}
+    .colunaB{width: 40%;}
+    .colunaC{width: 100%;}
+    .colunaA,.colunaB,.colunaC{
+        height: 300px;
+    }
+}
+@media screen and (max-width:605px){
+    main{
+    flex-direction: column;}
+    .colunaA, .colunaB,.colunaC{width: 100%;}
+}
+@media screen and (max-width:550px){
+    header{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+    }
+    
+}
+</style>
+
+
+</head>
+<body>
+
+    <div id="container">
+
+        <header>
+            <h1>Desktop First</h1>
+
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+
+        <main>
+            <article class="colunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel voluptas saepe id ab temporibus distinctio magni natus fuga esse corrupti porro ex at qui optio molestias ipsum, velit, libero hic?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laudantium magni numquam totam tempore aliquam quidem id iste libero voluptatum?</p>
+            </article>
+
+            <article class="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste, sed esse quisquam, similique, magni placeat molestiae corrupti aperiam veritatis eos itaque saepe? Consequuntur aspernatur earum magni enim. Nam, ex!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur praesentium, dicta quam in adipisci hic consequatur eos voluptatibus, labore accusantium explicabo obcaecati doloribus culpa beatae!</p>
+            </article>
+
+            <article class="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit, amet maxime facilis mollitia praesentium illo ipsum id illum. Optio?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, in!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum labore nobis. Sunt, in consectetur?</p>
+            </article>
+
+        </main>
+
+        <footer>
+            <h2>Design Responsivo</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

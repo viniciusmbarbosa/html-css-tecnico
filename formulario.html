@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Tags e Atributos para formulários</h1>
+        <hr>
+        <p>Interface com campos para entrada e seleção de dados.</p>
+        <!-- O form action="" method="get" não é usado por conta da falta de segurança, ele passa as informações digitadas na URL da página -->
+        <form action="" method="get"></form>
+        <!-- form action="" method="post" é mais usado por que ele é mais seguro, pois ele envia as informações digitadas para um banco de dados (O exemplo de hoje, as informações vão ser direcionada para um arquivo externo (email)).  -->
+
+        <!-- method: Esse elemento é usado para fazer a transmissão do formulario -->
+        <!-- Action: É usado para o Back-End -->
+        <form action="" method="post">
+            <!-- Nome -->
+            <!-- O elemento For é usado para sensibilidade -->
+            <label for="nome">Nome</label>
+            <!-- Placeholder: É usado para colocar uma mensagem dentro do bloco -->
+            <!-- Required: É usado para dar sugestão no preechemento -->
+            <input required placeholder="Digite o seu nome" type="text" name="Apelido1"><br>
+
+            <!-- E-mail -->
+            <p>
+                <label for="email">Email</label>
+                <input required placeholder="Digite o seu Email" type="email" name="email">
+            </p>
+            <!-- Data de Nascimento -->
+            <p>
+                <label for="nasc">Nascimento</label>
+                <input required type="date" name="nasc" min="2000-01-01" max="2023-03-03">
+            </p>
+            <!-- Mensagem -->
+            <p>
+                <label for="assunto">Assunto:</label>
+                <select required name="assunto" id="assunto">
+                    <option value="#">Reclamações</option>
+                    <option value="#">Me dá dinheiro</option>
+                    <option value="#">Comprar paçoca</option>
+                    <option value="#">Sem assunto</option>
+                    <option value="#">--</option> 
+                </select>
+                    
+            </p>
+            <p>
+                <label for="mensagem">Mensagem(mínimo de 5 e máximo de 50)</label><br>
+                <!-- textarea é usado para fazer uma caixa de mensagem! -->
+                <!-- maxlength: Declara qual é a quantidade de caractere máximo do campo -->
+                <!-- minlength:é usado como a declaração do minimo de caracter que pode ser colocada na mensagem! -->
+                <textarea required minlength="5" maxlength="50" placeholder="Digite a sua mensagem" name="" id="" cols="30" rows="5"></textarea>
+            </p>
+            <!-- Senha -->
+            <label for="senha ">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <!-- Botão -->
+            <!-- Submit: Esse elemento é usado para enviar o formulario -->
+            <button type="submit">Entrar</button><br>
+
+            <p>Deseja receber informativos?
+                <input type="radio" name="informativos" id="sim">
+                <label for="sim">Sim</label>
+
+                <input type="radio" name="informativos" id="nao">
+                <label for="nao">Não</label>
+
+                <p>Escolha as tecnologias de sua preferência:</p><br>
+                <input type="checkbox" name="tecnologia" id="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="tecnologia" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="tecnologia" id="java">
+                <label for="java">Java</label>
+                
+            </p>
+        </form>
+    </body>
+</html>

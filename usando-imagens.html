@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando imagens no html</title>
+    <style>
+        #imagem {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trablhando com imagens</h1>
+    <hr>
+    <h2>Formatos mais comuns para a web</h2>
+    <ul>
+        <li>JPG/JPG</li>
+        <li>GIF</li>
+        <li>PNG</li>
+        <li>PSVG</li>
+    </ul>
+    <ul>
+        <li>JPEG/JPG: em geral para fotos com suporte a milhões de cores e com compressão.</li>
+        <li>GIF: usado para desenhos, suporte animação e transparência.</li>
+        <li>PNG:bom para fotos com milhões de cores, suporte a compressão e transparência.</li>
+        <li>
+            SVG:formato vetorial, ou seja baseado wm nós, segmento, linha. bom para ilustrações e para casos em que será
+            necassário redimensionar a imagem.
+        </li>
+    </ul>
+    <h2>Exemplo</h2>
+    <!-- 
+        - Tag: <img>
+        - Atributos:
+            Src: indica o caminho do arquibo de imagem e próprio arquivo
+            alt: texto alternativo (pequena descrição da imagem)
+     -->
+    <img src="imagens/pink-floyd.jpg" alt="Integrantes da banda acenando para o público">
+
+    <!-- Imagens dentro de outras tags -->
+    <p>
+        <img src="imagens/logo-html5.png" alt="html">
+        <img src="imagens/logo-css3.gif" alt="css">
+        <img src="imagens/logo-javascript.gif" alt="java">
+
+    </p>
+    <!-- Imagens são colocadas lado a lado (se houver espaço na) -->
+    <p><img src="imagens/dedos.jpg " alt="">
+        <img src="imagens/ideias.jpg" alt="">
+        <img src="imagens/pacoca.jpg" alt="">
+    </p>
+    <!-- Imagens são colocadas uma em cima da outra, não importand o tamanho da tela -->
+    <p><img src="imagens/dedos.jpg" alt=""></p>
+    <p><img src="imagens/ideias.jpg" alt=""></p>
+    <p><img src="imagens/pacoca.jpg" alt=""></p>
+
+    <!-- Novidades no html5 para ilustrações em geral -->
+    <!-- figure e feito para fazer ilustrações -->
+    <div id="imagem">
+        <figure>
+            <img src="imagens/stonehenge.jpg" alt="">
+            <figcaption>Ruínas do Stonehenge (foto tirada em 2012)</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/stonehenge.jpg" alt="">
+            <!-- Figcaption Séria uma legenda  -->
+            <figcaption>Ruínas do Stonehenge (foto tirada em 2012)</figcaption>
+        </figure>
+    </div>
+
+    <hr>
+    <!-- Imagens png/jpg/gif: BITMAP (formadas por pixels) -->
+    <p><img src="imagens/black-cat.png" alt=""></p>
+    <!-- Imagens svg: Vetor (formada por nós, linhas) -->
+    <p><img src="imagens/black-cat.svg" alt=""></p>
+</body>
+
+</html>

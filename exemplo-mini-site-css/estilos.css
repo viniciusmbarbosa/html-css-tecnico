@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Climate+Crisis&display=swap');
+
+
+/* Regras css para o site de exemplo
+O que você fizer aqui irá formatar Todas as páginas HTML conectadas com este arquivo. */
+
+/* Seletor UUNIVERSAL Alterando o box model para todas as tags do HTML */
+*{box-sizing: border-box;}
+
+body {
+    background-image: url(imagens/tarde.jpg);
+    opacity: ;
+    /*background-size:cocover é usado para cobrir a tela por completo. como se fosse uma responsividade. */
+    background-size: cover;
+
+}
+
+/* Seletor Id/Identificado */
+/* O # se  refere a um identificador */
+#container {
+    background-color: rgba(167, 129, 129, 0.692);
+    /* Definindo largura e margem automática, o resultado e a centralizalção da caixa */
+    width: 80%;
+    /* Margin auto é usada para deixar o bloco no meio,  */
+    padding: 10px;
+    border-radius: 20px;
+    /* corda disth distV esfumaçamento */
+    box-shadow: rgb(199, 129, 129) 0 0 100px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 600px;
+    
+
+}
+h2{
+    background-image: url(imagens/oriental-tiles.png);
+    color:white;
+    padding: 10px;
+    border-left: yellow solid;
+    border-right: yellow solid;
+   
+}
+ul{font-family: Impact;}
+ul li{color:red}
+
+/* Pseudo-classe */
+
+/* Formatando apenas o primeiro
+li descendente de ul */
+ul li:first-child{color:blue;}
+
+/* Formatando apenas último 
+li descente de ul*/
+ul li:last-child{
+    color:green;
+}
+ul li:nth-child(2) {color:black;}
+
+/* odd -> ímpar even -> par */
+/* ul li:nth-child(odd){background-color: lightcoral;} */
+/* ul li:nth-child(even) {background-color: yellow;} */
+
+ul li:nth-child(n +5){background-color: lawngreen;}
+.centralizar{
+    text-align: center;
+   
+}
+.sombra-texto{text-shadow:black 2px 2px 3px}
+.borda-arredondada{border-radius: 8px;}
+.destaque{
+    background-color: yellow;
+    padding: 2px 4px;
+    border: solid 2px red;
+}
+
+img {
+    /* Estamos tornando a imagens flexíveis/responsivas */
+    max-width: 100%;
+    border-radius: 20px;
+    border-bottom: solid 5px rgb(156, 156, 156);
+
+}
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Climate Crisis', cursive;
+    text-align: center;
+    color: linen;
+    padding: 10px;
+    Text-shadow: black 1px 1px 5px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    
+    font-weight: normal;
+    font-size: 50px;
+    /* to top, left, bottom, right é usado para mudar a direção do linear-gradient
+    Deg: No caso de gradiente diagonal usa-se um valor numérico e a medida em graus (deg representa graus)  */
+
+    /* Site para referencias de gradiente https://www.colorzilla.com/gradient-editor/
+    https://cssgradient.io/ */
+    background: rgb(1, 89, 128);
+    background: linear-gradient(90deg, rgba(1, 89, 128, 1) 25%, rgba(7, 101, 39, 1) 48%, rgba(0, 212, 255, 1) 100%);
+}
+nav a{
+    
+    padding: 10px;
+    background: rebeccapurple;
+    text-decoration: none;
+    color: azure;
+    box-shadow: 1px 1px 3px rgba(184, 17, 17, 0.356) ;
+    display: inline-block;
+    /* Á diferença de px para % é a interação com o tamanho de tela, % se ajusta automaticamente já px não. */
+    width: 33.33%;
+    /* Altera o comportamento Box Model CSS */
+    box-sizing: border-box;
+    /* para demorar para subir  */
+    transition: 0.5s;
+    
+}
+nav a:hover, nav a:focus{
+    background: rgb(224, 78, 78);
+    color:black;
+    padding: 5px;
+    /* essa é usada para subir a tag */
+    transform: translateY(-10px);
+
+}
+
+
+
+/* Regras para o menu e sus links */
+nav{text-align: center;}
+
+/* Regra de estado inicial do link */
+/* Seletor Descebdebte */
+nav a{
+    /* negrito */
+    font-weight: bold;
+    
+}
+img{
+    max-width: 100%;
+    
+}
+figure{
+    text-align: center;
+    margin:0;
+    position:relative;
+    max-width: 419px;
+    margin: 0 auto;
+    /* Para ficar a mão de click */
+    cursor: pointer
+}
+
+figcaption{
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.363);
+    
+    /* Coordenadas */
+    top: 0 ;
+    left: 0;
+    /* bottom: ; */
+    /* right: ;     */
+
+}
+/* Seletor DESCENDENTE */
+figure img{
+    /* filter é usado para mudar a coloração da imagem */
+    filter: grayscale(100%);
+    transition: 2s;
+
+}
+figure img:hover{
+    filter: none;
+    transform:rotate(3deg);
+    transform:scale(1.05);
+    
+    
+}
+
+/*  Seletor Descendente
+Selecionar todas as imagens
+https://bennettfeely.com/clippy/ */
+.centralizar img{
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+}
+.flutuar{
+    float: left;
+}
+/* Etapa1: regra de animação */
+@keyframes animaCores{
+    /* De: (como inicia) */
+    from {
+        background:linear-gradient(to left,black, red);
+        color: blue;
+    }
+
+    /* Para (como termina) */
+    to {
+        background:linear-gradient(to left,red, blue);
+        color: yellow;
+    }
+}
+
+
+/* Etapa2: aplicar a animação em algum(ns) elemento(s) */
+
+.subtitulo{
+    animation-name: animaCores;
+    
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+#banner{
+    width: 450px;
+    margin:auto;
+    border:solid 2px;
+    padding: 30px;
+    /* overflow: Esconde quando a imagem passa o limite */
+    overflow: hidden;
+    position:relative;
+}
+@keyframes animaBanner{
+    from{
+        transform: translatex(300px) rotate(360deg);
+    }
+    to{
+        transform:translateX(300px) rotate(360deg) scale();
+    }
+}
+/* Seletor desendente */
+#banner img{
+    animation-name:animaBanner;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in;
+    animation-direction:alternate ;
+    
+    
+
+}
+@keyframes animaSevira{
+    from{
+        transform:scale(1);
+    
+    }
+    to{
+        
+        transform:scale(1.5);
+        background-color: blue;
+        
+        
+    }
+}
+#banner p{
+    /* vai mudar */
+    will-change: transform;
+
+    font-size: 35px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    right: 0;
+    bottom: 30px;
+    background-color: rgba(17, 26, 23, 0.089);
+    transform:rotate();
+    animation-name:animaSevira;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate ;
+
+}

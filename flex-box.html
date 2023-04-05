@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            /* flex box, origamite
+             */
+             
+            
+        }
+        .container{
+            
+            border: solid red 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /*  */
+            gap: 40px;
+
+            /*  Se a direção for row, se comporta como alinamneto vertical */
+
+            align-items: center;
+
+            /* Quebra do flex */
+            flex-wrap:wrap;
+
+
+            /* Alinhamento do grupo de itens */
+            /* align-content: center; */
+
+            height: 2000px;
+            width: 80%;
+            margin:auto
+        }
+        article{
+            border: solid 1px black;
+            box-shadow: 2px 1px 5px;
+            width: 30%;
+            height: 550px;
+            padding: 10px;
+
+        }
+        #exemplo{
+            align-self:;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo css3 que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de elementos HTML, Muito útil na elaboração de layouts.</p>
+
+    <div class="container">
+        <article id="exemplo">
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>apple</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem laudantium ipsum, cumque a et, officia assumenda magnam, repudiandae ratione unde eaque quidem ex veniam! Mollitia at consequatur officia porro.</p>
+        </article>
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus vero, illum quod ducimus eius asperiores odit dolor quisquam labore et qui dolore, temporibus perspiciatis ipsum est animi nam. Quam!</p>
+        </article>
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Micro software</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur quidem necessitatibus debitis. Porro dicta nam incidunt non minima, eos ut consequuntur maiores veniam? Dolor, repudiandae? Fugiat dolorum amet enim.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="">
+            <h2>apple</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem laudantium ipsum, cumque a et, officia assumenda magnam, repudiandae ratione unde eaque quidem ex veniam! Mollitia at consequatur officia porro.</p>
+        </article>
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus vero, illum quod ducimus eius asperiores odit dolor quisquam labore et qui dolore, temporibus perspiciatis ipsum est animi nam. Quam!</p>
+        </article>
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Micro software</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur quidem necessitatibus debitis. Porro dicta nam incidunt non minima, eos ut consequuntur maiores veniam? Dolor, repudiandae? Fugiat dolorum amet enim.</p>
+        </article>
+    </div>
+</body>
+</html>

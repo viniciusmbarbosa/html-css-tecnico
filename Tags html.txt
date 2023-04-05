@@ -1,0 +1,38 @@
+<ABBR>	Indica um nome abreviado.	STF
+<ACRONYM>	Indica um acrônimo, ou abreviatura de uma palavra.	STF
+<ADDRESS>	Espaço onde são colocadas informações sobre o conteúdo de uma página, como nome do autor, endereço, etc..	STF
+<B>	Define um texto em negrito, dentro de um texto normal.	STF
+<BDO>	Muda a direção de um texto, como se o texto fosse lido através de um espelho.	STF
+<BIG>	Define um texto com fontes maiores, dentro de um texto normal.	STF
+<BLOCKQUOTE>	Indica enfase em alguma parte de um texto, quebrando a linha anterior.	STF
+<CENTER>	Indica que um texto deverá ficar centralizado na página.	TF
+<CITE>	Indica uma parte de um texto com o formato itálico.	STF
+<CODE>	Indica normalmente um código, uma fórmula, dentro de um texto. Este conteúdo é vizualizado em fonte "monospace".	STF
+<DEL>	Define um texto riscado, indicando que não é mais apropriado.	STF
+<DFN>	Indica enfase em alguma parte de um texto.	STF
+<EM>	Indica enfase em alguma parte de um texto.	STF
+<FONT>	Indica as características de uma fonte, como o tamanho da fonte, a cor e tipo.	TF
+<I>	Indica uma parte de um texto com o formato itálico.	STF
+<INS>	Indica um texto colocado após um texto já existente.	STF
+<KBD>	Indica uma palavra para o usuário se autenticar em um sistema.	STF
+<MARQUEE>	Mostra um texto em movimento.	STF
+<NOSCRIPT>	Alerta que o navegador do usuário não resolve "javascripts".	STF
+<PLAINTEXT>	Indica um texto que será exibido, tal como foi escrito.	 
+<PRE>	Indica um texto que será exibido, tal como foi escrito, com quebra de linha, por exemplo, sem o uso da tag <br />.	STF
+<Q>	Definine um comentário entre aspas.	STF
+<S>	Define um texto riscado.	TF
+<SAMP>	Define um texto com fonte Lucida Console, dentro de um texto normal.	STF
+<SMALL>	Define um texto menor, dentro de um texto normal.	STF
+<SPAN>	Define um espaço numa página.	STF
+<STRIKE>	Define um texto riscado.	TF
+<STRONG>	Define um texto em negrito, dentro de um texto normal.	STF
+<SUB>	Define um texto subscrito, dentro de um texto normal.	STF
+<SUP>	Define um texto sobrescrito, dentro de um texto normal.	STF
+<TT>	Indica um texto escrito com largura fixa entre os caracteres, como em uma máquina de escrever.	STF
+<U>	Retorna um texto sublinhado.	TF
+<VAR>	Indica uma parte com formato diferente do padrão de um texto.	STF
+<XMP>	Indica um texto que será exibido, tal como foi escrito.
+Esta em desuso.
+
+Pixabay Séria onde tem imagens grátuita.
+Unsplash Séria onde tem imagens grátuita.

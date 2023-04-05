@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="">
+        <title>Criando links HTML</title>
+        <style>
+            img{
+                width: 100px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Trabalhando com links (ou hiperlinks)</h1>
+        <hr>
+        <h2>Absoluto/Externo</h2>
+        <p>Carrega/Aponta para endereços externos, ou seja, outros sites (sites fora do seu próprio site).</p>
+
+        <h3>Exemplo</h3>
+        <!-- Tag <a>  conhecida como âncora/link
+            Atributos href indica o caminho/endereço do link
+            Atributo target: com o valor "_blank" faz com que o site seja aberto em outra aba/guia. -->
+        
+        <p><a target="_blank" href="https://www.sp.senac.br/">Acesse o site senac SP</a></p>
+
+        <p>SItes úteis sobre HTML:</p>
+            <a target="_blank" href="https://www.maujor.com/">Maujor</a> e <a target="blank" href="https://www.w3schools.com/">W3schools</a>
+
+        <h2>Relativo</h2>
+        <p>Carrega/Aponta para página interna, ou seja, páginas do seu próprio site.</p>
+        <!-- Ponto barra serve para linkar pasta que não esteja na raiz -->
+        <h3>Exemplo</h3>
+        <P><a href="../Aula 3/Elementetos-textuais.html">Veja exemplos de tags textuais</a></P>
+
+        <p>Veja a seguir alguns exercícios que já fizemos:</p><br>
+        <a href="../Exercicios/Exercicio1.html"> &larr; Exercício 1</a><br>
+        <a href="../Aula 2/exemplo-geral.html">Exercício 2</a><br>
+        
+        <!-- Sites para ilustrações de emoji e simbolos
+        http://www.erikasarti.com/html/dingbats-simbolos-desenhos/
+        https://getemoji.com/ -->
+
+        <h2>Contato (Telefone, E-mail)</h2>
+        <!-- O elemento tel: é usado para caso seja colocado o usúario seja direcionado direto para o app de telefone
+        Com o E-mail é usado o mailton: -->
+        <p>Entre em contato pelo telefone <a href="tel:1124382177">(11) 24382177</a></p>
+        <p><a href="mailto:penha@sp.senac.br">Penha@sp.senac.br</a></p>
+        <!-- Para iniciar um link direto do whatsApp é necessário https://wa.me no endereço do site -->
+        <a href="https://api.whatsapp.com/send?phone=5511952890215&text=Por%20gentileza%20me%20chamar%20de%20Sr.%20Vinicius%20de%20Miranda%20Barbosa
+        " target="_blank"><img src="imagem wpp.jpg"></a>
+        <!-- Validador de código w3c -->
+    </body>     
+</html>                                                                                                                                                                                                                                                                

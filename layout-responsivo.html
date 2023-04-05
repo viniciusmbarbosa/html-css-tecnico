@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: verdana, sans-serif;
+            background-color: white;
+        }
+
+        header {
+            background: blue;
+            text-align: center;
+        }
+
+        #container {
+            padding: 1%;
+            box-shadow: black 0 0 10px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2,p {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: yellow;
+        }
+
+        .colunaA {
+            background-color: rgb(61, 59, 184);
+        }
+
+        .colunaB {
+            background-color: rgb(156, 42, 51);
+        }
+
+        .colunaC {
+            background-color: rgb(59, 143, 143);
+        }
+
+        footer {
+            background-color: burlywood;
+        }
+        h2, p{padding: 0.5rem;}
+    
+        /* Pegar todos os artigos
+        Utilizamos min-height para garantirque todos tenham pelo menos altura especifica (no caso 300px) se necessario, cada um aumentará automaticamente  */
+
+        .colunaA, .colunaB, .colunaC{min-height: 300px;}
+        @media screen and (min-width:700px){
+            header{
+                background-color: aqua;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80px;
+                 
+                
+            }
+            nav{
+                height: 40px;
+                
+                /* Usamos % */
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            
+            main{
+                display:flex;
+                flex-wrap: wrap;
+            }
+
+            .colunaA{width: 60%;}
+            .colunaB{width: 40%;}
+            .colunaC{width: 100%;}
+        }
+
+        /* Fim da media query de 700px */
+        @media screen and (min-width:900px){
+            .colunaA, .colunaB, .colunaC {width: 33.33%;}
+            #container {
+                max-width: 1100px;
+                margin: auto;
+            }
+
+            /* Aumentando o tamanho de todos os textos */
+            html {font-size: 20px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Flexbox</h1>
+            <nav>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+            </nav>
+        </header>
+        <main>
+
+            <article class="colunaA">
+
+                <h2>Coluna A</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, incidunt commodi. Voluptates
+                    exercitationem consequuntur delectus quibusdam repellendus corrupti. Veritatis, labore.?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nesciunt aliquam rem aperiam officiis
+                    dicta assumenda commodi aliquid! Quos, consequuntur!</p>
+
+            </article>
+            <article class="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, incidunt commodi. Voluptates
+                    exercitationem consequuntur delectus quibusdam repellendus corrupti. Veritatis, labore.?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nesciunt aliquam rem aperiam officiis
+                    dicta assumenda commodi aliquid! Quos, consequuntur!</p>
+
+            </article>
+
+            <article class="colunaC">
+
+                <h2>Coluna C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, incidunt commodi. Voluptates
+                    exercitationem
+                    consequuntur delectus quibusdam repellendus corrupti. Veritatis, labore.?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nesciunt aliquam rem aperiam officiis
+                    dicta
+                    assumenda commodi aliquid! Quos, consequuntur!</p>
+
+            </article>
+
+            <footer>
+                <h2>Lorem, ipsum dolor.</h2>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
